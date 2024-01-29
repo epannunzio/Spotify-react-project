@@ -1,0 +1,42 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  margin-top: auto;
+  background-image: linear-gradient(to right, rgb(200, 48, 214), rgb(147, 66, 214), rgb(67, 127, 236));
+}
+
+.footer__txt p:first-child {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--white);
+  padding: 8px;
+}
+
+.footer__txt p {
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--white);
+  padding: 8px;
+}
+
+.footer__container-btn {
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+.footer__container-btn button {
+  background-color: var(--gray1);
+  color: var(--black);
+  border-radius: 20px;
+  padding: 13px;
+  font-weight: 700;
+  border: none;
+  width: 140px;
+  height: 40px;
+}
+
+.footer__container-btn span {
+  font-size: 13px;
+}

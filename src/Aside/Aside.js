@@ -1,6 +1,7 @@
 import React from "react";
 import './Aside.css';
 import logoSpotify from '../assets/icons/logo-spotify.png';
+import { FaBook, FaGlobe, FaHome, FaPlus, FaSearch } from "react-icons/fa";
 
 const Aside = () => {
   return(
@@ -11,29 +12,29 @@ const Aside = () => {
             <img src={logoSpotify} alt="logo spotify"></img>
           </a>
         </div>
-          <ul>
-            <li>
-              <a href="#">
-                <span className="fa fa-home"></span>
-                <span>Início</span>
-              </a> 
-            </li>
-            <li>
-              <a href="#">
-                <span className="fa fa-search"></span>
-                <span>Buscar</span>
-              </a> 
-            </li>
-          </ul>
+        <ul>
+          <li>
+            <a href="#">
+              <FaHome />
+              <span>Início</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <FaSearch />
+              <span>Buscar</span>
+            </a>
+          </li>
+        </ul>
       </nav>
 
       <div className="library">
         <div className="library__content">
           <button className="library__button">
-            <span className="fa fas fa-book"></span>
+            <FaBook />
             <span>Sua biblioteca</span>
           </button>
-          <span className="fa fa-plus"></span>
+          <FaPlus />
         </div>
 
         <section className="section-playlist">
@@ -52,7 +53,7 @@ const Aside = () => {
 
         <div className="languages">
           <button className="languages__button">
-            <span className="fa fa-globe"></span>
+            <FaGlobe />
             <span>Português do Brasil</span>
           </button>
         </div>
